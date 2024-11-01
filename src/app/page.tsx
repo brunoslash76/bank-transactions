@@ -46,15 +46,12 @@ export default function Home() {
     const date = event.target.value
 
     setSelectedDate(date)
+
+    // TODO: check bug with dates
     
     const filteredTransactions = transactions.filter(transaction => {
-      console.log(transaction.date)
-      console.log(date)
-      console.log(isSameDay(transaction.date, date))
       return isSameDay(transaction.date, date)
     })
-
-    console.log(filteredTransactions)
 
     if (filteredTransactions) {
       setTransactions(filteredTransactions)
