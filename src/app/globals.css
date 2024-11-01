@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import 'react-toastify/dist/ReactToastify.css';
 
 :root {
   --background: #ffffff;
@@ -9,7 +10,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: hsl(0, 0%, 4%);
     --foreground: #ededed;
   }
 }
